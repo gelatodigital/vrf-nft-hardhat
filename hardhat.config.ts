@@ -16,14 +16,10 @@ import * as dotenv from "dotenv";
 dotenv.config({ path: __dirname + "/.env" });
 
 // Libraries
-import assert from "assert";
 
 // Process Env Variables
 const ALCHEMY_ID = process.env.ALCHEMY_ID;
-assert.ok(ALCHEMY_ID, "no Alchemy ID in process.env");
 const INFURA_ID = process.env.INFURA_ID;
-assert.ok(INFURA_ID, "no Infura ID in process.env");
-
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const ETHERSCAN_KEY = process.env.ETHERSCAN_KEY;
 
