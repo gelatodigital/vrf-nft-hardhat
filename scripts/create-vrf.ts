@@ -32,7 +32,7 @@ const main = async () => {
   await tx.wait();
   console.log(`Task created, taskId: ${taskId} (tx hash: ${tx.hash})`);
   console.log(
-    `> https://app.gelato.network/functions/task/${taskId}:${chainId}`
+    `> https://vrf.app.gelato.network/task/${taskId}?chainId=${chainId}`
   );
 };
 
